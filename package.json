@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:proxy": "cross-env DEV_URL=xxx node devServer.mjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@types/node": "^17.0.29",
+    "@types/react": "^18.0.8",
+    "autoprefixer": "^10.4.5",
+    "cross-env": "^7.0.3",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "express": "^4.18.1",
+    "http-proxy-middleware": "^2.0.6",
+    "husky": "^7.0.0",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.6.3"
+  }
+}
