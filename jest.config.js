@@ -1,7 +1,8 @@
 module.exports = {
   collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
+    '**/components/**/*.{js,jsx,ts,tsx}',
     '!**/pages/**/*.{js,jsx,ts,tsx}',
+    '!**/.next/**',
     '!**/*.d.ts',
     '!**/node_modules/**',
   ],
@@ -34,4 +35,15 @@ module.exports = {
     '/node_modules/',
     '^.+\\.module\\.(css|sass|scss)$',
   ],
+  // This will be used to configure minimum threshold enforcement for coverage results.
+  // You can combine this with lint staged and husky to make the check in pre-commit.
+  // https://jestjs.io/docs/configuration#coveragethreshold-object
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: -10,
+    },
+  },
 }
