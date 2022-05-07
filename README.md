@@ -17,8 +17,10 @@ npm run dev
 
 ## Feature
 
-- TypeScript
-- TailwindCSS
+- React 18
+- TypeScript 4
+- TailwindCSS 3
+- Jest
 - Husky
 - Prettier
 
