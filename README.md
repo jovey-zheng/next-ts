@@ -26,4 +26,4 @@ npm run dev
 
 ### devServe.js
 
-Check the [file](./devServe.js) to configure your proxy information.
+Check the [file](./devServe.js) to configure your proxy.
